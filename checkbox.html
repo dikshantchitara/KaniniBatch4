@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function printCheckboxValue() {
+        var checkbox = "";
+        java=document.getElementById("c1");
+        python=document.getElementById("c2");
+        if(java.checked== true){
+        checkbox+="java";
+      }
+      if(python.checked==true)
+      {
+        checkbox+="python"
+      }
+      document.getElementById("p1").innerHTML="you selected "+checkbox;
+      }
+    </script>
+  </head>
+  <body>
+    <form action="" name="f1">
+    <label for="checkbox">JAVA</label>
+    <input type="checkbox" name="c1" id="c1">
+
+    <label for="python">python</label>
+    <input type="checkbox" name="c2" id="c2">
+    
+    <button onclick="printCheckboxValue()" value="submit">Print</button>
+</form>
+<p id="p1"></p> 
+</body>
+
+</html>

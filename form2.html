@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <script>
+        function fetch()
+        {
+            name=document.myForm.fname.value;
+            last=document.myForm.lname.value;
+            Gender=document.myForm.Gender.value;
+            Age=document.myForm.age.value
+            document.getElementById("p1").innerHTML="Welcome  "+name +"  " +last;
+            document.getElementById("p2").innerHTML="your Gender is" +Gender;
+        }
+        
+    </script>
+</head>
+
+<body bgcolor="ffff00">
+    <fieldset>
+        <legend>REGISTRATION</legend>
+      
+    <form action="BLOG.HTML" method="post" name="myForm" autocomplete="off">
+        <table>
+
+<tr>
+    <td>
+        <label for="fname">First name:</label></td>
+        <td>
+        <input type="text" id="fname" name="fname" placeholder="Name"></td>
+    </tr>
+
+    <tr>
+          <td>  <label for="lname">Last name:</label> </td>
+          <td>  <input type="text" id="lname" name="lname" placeholder="last name"></td>
+        </tr>
+        <tr>
+            <td>
+        <label for="age">Age</label></td>
+        <td>
+        <input type="text" name="age" id="age" placeholder="Age"></td>
+    </tr>
+
+    <tr>
+        <td>
+        <label for="date">Date of Birth</label></td>
+        <td>
+        <input type="date" value="2023-08-01" /></td>
+    </tr>
+    
+    <tr>
+       <td> <label for="Email">Enter Your Email</label></td>
+        <td><input type="text" id="email" placeholder="Email"></td>
+    </tr>
+
+    <tr>
+       <td> <label for="password">Enter Your password</label></td>
+       <td> <input type="password" id="password" ></td>
+    </tr>
+
+    <tr>
+        <td><label for="address">Enter Your Address</label></td>
+        <td><textarea name="address" id="address" placeholder="Address" cols="30" rows="10"></textarea></td>
+    </tr>
+
+    <tr>
+      <td> <label for="checkbox">Footbal</label></td>
+      <td>  <input type="checkbox" name="checkbox1" id="checkbox1"><br></td>
+    </tr>
+
+    <tr>
+        <td><label for="checkbox">Cricket</label></td>
+        <td><input type="checkbox" name="checkbox1" id="checkbox1"></td>
+    </tr>
+
+    <tr>
+        <td><label for="checkbox">Badminton</label></td>
+        <td><input type="checkbox" name="checkbox1" id="checkbox1"></td>
+        
+    </tr>
+
+    <tr>
+       <td> <label for="radiobutton">SEX</label></td>
+       <td> MALE <input type="radio" name="Gender" id="radio1" value="male"></td>
+       <td>FEMALE <input type="radio" name="Gender" id="radio1" value="female"></td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="click me" onclick="fetch();">
+        </td>
+    </tr>
+        <p id="p1"></p>
+<script>
+	var date = new Date();
+	document.getElementById("p1").innerHTML = date;
+</script>
+</table>
+    </form>
+
+</fieldset>
+
+<p id="p2"></p>
+</body>
+</html>

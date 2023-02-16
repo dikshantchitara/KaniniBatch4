@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 90%;
+            max-width: 900px;
+            margin: 0% auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+         
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1/5;
+            gap: 20px;
+        }
+        header
+        {
+          
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-left: 10px;
+            margin-top: 0%;
+            background-color: rgb(101, 93, 214, 0.664);
+            border: 2px solid rgb(0, 0, 0);
+            height: 60px;
+            grid-column: 1/5;
+            
+        }
+       
+        li:hover
+        {
+            background-color: blue;
+            border-radius: 5px;
+        }
+        li
+        {
+            list-style: none;
+            background-color: aqua;
+            width: 150px;
+        }
+        .about
+        {
+            margin-left: 40px;
+        }
+        footer {
+            grid-column: 1/5;
+            padding-left: 10px;
+            margin-top: 0%;
+            border-radius: 5px;
+            padding-top: 30px;
+            background-color: rgba(101, 93, 214, 0.664);
+            border: 2px solid rgb(0, 0, 0);
+            height: 60px;;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header> <b><h1 style="color: whitesmoke;"> KANINI </h1></b></header>
+       <div>      
+         <ul>
+            <li>
+               <h3> About </h3>
+            </li>
+            <li>
+             <h3>   Services</h3>
+            </li>
+            <li>
+               <h3> Career </h3>
+            </li>
+            <li>
+               <h3> Contact </h3>
+            </li>
+        </ul>
+   
+</div>
+<div>
+    <img src="img/book3.jpg" alt="img">
+  </div>
+<div class="About">
+      
+            <h1>ABout</h1>
+            <p>
+                Kanini is one of the best software developement company
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam ut libero delectus corporis, excepturi dolorum soluta aliquid reprehenderit minima in pariatur perferendis porro ullam neque, culpa incidunt dicta qui error.
+            </p>
+    </div>
+        <footer>
+            &#169 Copyrights Reserved
+        </footer>
+    </div>
+</body>
+</html>

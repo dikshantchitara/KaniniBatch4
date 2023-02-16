@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function fetch() {
+            localStorage.setItem("txtValue", JSON.stringify(f1.email.value));
+            localStorage.setItem("txtValue1", JSON.stringify(f1.password.value));
+            localStorage.setItem("txtValue2", JSON.stringify(f1.mobile.value));
+            localStorage.setItem("txtValue3", JSON.stringify(f1.telephone.value));
+        }
+    </script>
+</head>
+
+<body>
+
+    <fieldset style="width: fit-content; margin: 0 auto; font-size: 30px;">
+        <form name="f1" action="storage.html" method="get" autocomplete="off">
+            <legend>Sign Up Form</legend>
+            <label>Email:<br />
+                <input type="text" name="email" id="email" /></label><br />
+            <label>Password<br />
+                <input type="password" name="password" id="password" /></label><br>
+            <label>Mobile:<br />
+                <input type="number" name="mobile" id="mobile" /></label><br />
+            <label>Telephone:<br />
+                <input type="number" name="telephone" id="telephone" /></label><br>
+            <input type="submit" value="Submit" onclick="fetch()">
+        </form>
+</body>
+
+</html>

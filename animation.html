@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @keyframes animated {
+        0% {
+         background-image: url(img/01.gif);
+        }
+        25% {
+          background-image: url(img/03.gif);
+          background-repeat: no-repeat;
+        }
+        50%
+        {
+          background-image: url(img/02.gif);
+
+        }
+        100%
+        {
+          background-image: url(img/05.webp);
+        }
+      }
+      
+      body{
+        animation-name:animated;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+      }
+</style>
+</head>
+<body>
+    <div id="animate-area"></div>
+</body>
+</html>

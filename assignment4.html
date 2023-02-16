@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Palindrome Checker</title>
+</head>
+<body>
+  <h2>Palindrome Checker</h2>
+  <form>
+    <input type="text" id="inputString">
+    <button id="checkBtn">Check</button>
+  </form>
+  <p id="result"></p>
+
+  <script>
+    const inputString = document.getElementById("inputString");
+    const checkBtn = document.getElementById("checkBtn");
+    const result = document.getElementById("result");
+
+    checkBtn.addEventListener("click", function(event) {
+      event.preventDefault();
+      let string = inputString.value;
+      let reversedString = string.split("").reverse().join("");
+
+      if (string === reversedString) {
+        result.innerHTML = "The string is a palindrome.";
+      } else {
+        result.innerHTML = "The string is not a palindrome.";
+      }
+
+      setTimeout(function() {
+        result.innerHTML = "";
+      }, 1000);
+    });
+  </script>
+</body>
+</html>

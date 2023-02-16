@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CSS Grid - line-based Element placement starting point</title>
+    <style>
+        body {
+            width: 90%;
+            max-width: 900px;
+            margin: 2em auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display:grid ;
+            grid-template-columns: 13;
+                    }
+
+        header
+        {
+            grid-column: 1/13;
+             grid-row: 1;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(207, 232, 220);
+            border: 2px solid rgb(79, 185, 227);
+        }
+        footer {
+            grid-row: 3;
+            grid-column: 1/13;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(207, 232, 220);
+            border: 2px solid rgb(79, 185, 227);
+            
+        }
+        article{
+            grid-column: 4/9;
+            grid-row: 2;
+        }
+
+        aside {
+            grid-row: 2;
+            grid-column: 1/4;
+            border-right: 1px solid #999;
+        }
+      
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>KANINI</header>
+        <article>
+            <h1>Kanini article</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita magni quo accusantium libero aperiam
+                rerum cum, suscipit distinctio, quod tempore cupiditate commodi repellendus natus perspiciatis odio,
+                laboriosam nostrum. Excepturi, voluptas!
+            </p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia minus reprehenderit unde quas sunt iste
+                itaque, quis, ducimus fuga quos exercitationem, quod adipisci cumque deleniti. Minima sequi ex excepturi
+                tenetur.</p>
+        </article>
+        <aside>
+            <h2>Other news</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam soluta harum placeat obcaecati
+                deleniti voluptas exercitationem explicabo, consequuntur atque fugit debitis. Maiores fugiat in quo
+                rerum at vitae veniam obcaecati?</p>
+        </aside>
+        <footer>Contact magazine@kanini.com</footer>
+    </div>
+
+</body>
+
+</html>

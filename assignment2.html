@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>A Simple Form</h1>
+    <h2>Form Fundamentals</h2>
+    <fieldset>
+        <legend>Customer Info</legend>
+    <form>
+        <table>
+            <tr>
+       <td> <label for="name">NAME</label></td>
+        <td><input type="text" name="name" id="name"></td>
+    </tr>
+    <tr>
+        <td>
+            <label for="telephone">TELEPHONE</label>
+        </td>
+        <td>
+            <input type="number" name="number">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="email">EMAIL</label>
+        </td>
+        <td>
+            <input type="email" name="email" >
+        </td>
+    </tr>
+    </table>
+    </form>
+
+</fieldset>
+<fieldset>
+    <legend>Books</legend>
+    <form >
+        <table>
+            <tr>
+                <td>
+                    <label for="BOOKNAME">BOOKNAME</label>
+                    <input type="text" name="bookname" >
+                </td>
+                <td>
+                    <label for="quantity">QUANTITY(Max:5)</label>
+                    <input type="text" name="quantity">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="alert('You Have successfully Submited the Book Form');">Show Message</button>
+
+                </td>
+            </tr>
+        </table>
+    </form>
+</fieldset>
+</body>
+</html>

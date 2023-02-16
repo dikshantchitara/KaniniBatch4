@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        
+        @media screen and (min-width:100px) and (max-width:400px) {
+            #p1{
+                color: rgb(255, 208, 0);
+                font-family: "Sofia";
+                font-size: bold;
+            }
+        }
+
+        @media screen and (min-width:400px) and (max-width:900px){
+            #p2{
+                background-color: aqua;
+                color: brown;
+                font-size: bold;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           
+            }
+            #p2::first-letter
+        {
+           font-size: 300px; 
+        }
+        }
+        #p3::after
+        {
+            content: url(img/flower.jpeg);
+        }
+     
+    </style>
+</head>
+<body>
+    <p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque vel recusandae quasi impedit fuga, quas pariatur suscipit a eum commodi. 
+        Vel repellat mollitia odit quibusdam consectetur tempora voluptatum, labore inventore.
+    </p>
+    <p id="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae est ullam ducimus tempore dicta temporibus doloribus, id officiis soluta voluptatibus, doloremque quidem aliquam ad quod cum natus nobis nisi ea?</p><br>
+    <p id="p3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni beatae distinctio molestiae in eligendi vero dicta nemo nulla, est debitis architecto veritatis sunt rerum consectetur quae soluta! Et, tenetur dolore!</p>
+</body>
+</html>

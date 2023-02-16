@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+</head>
+<body bgcolor="ffff00">
+    <fieldset>
+        <legend>REGISTRATION</legend>
+      
+    <form action="action" method="post" name="myForm">
+        
+
+
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Name"><br><br>
+
+            <label for="lname">Last name:</label> 
+            <input type="text" id="lname" name="lname" placeholder="last name"><br><br>
+
+        <label for="age">Age</label>
+        <input type="text" id="age" placeholder="Age"><br><br>
+
+        <label for="date">Date of Birth</label>
+        <input type="date" value="2023-08-01" /><br><br>
+
+        <label for="Email">Enter Your Email</label>
+        <input type="text" id="email" placeholder="Email"><br><br>
+
+        <label for="password">Enter Your password</label>
+        <input type="password" id="password" ><br><br>
+
+        <label for="address">Enter Your Address</label>
+        <textarea name="address" id="address" placeholder="Address" cols="30" rows="10"></textarea><br><br><br>
+
+       <label for="checkbox">Footbal</label>
+        <input type="checkbox" name="checkbox1" id="checkbox1"><br>
+
+        <label for="checkbox">Cricket</label>
+        <input type="checkbox" name="checkbox1" id="checkbox1"><br>
+
+        <label for="checkbox">Badminton</label>
+        <input type="checkbox" name="checkbox1" id="checkbox1">
+        <br><br>
+        
+        <label for="radiobutton">SEX</label><br>
+       MALE <input type="radio" name="radiobutton" id="radio1">
+       FEMALE <input type="radio" name="radiobutton" id="radio1"><br><br>
+       <input type="button" onclick="formSubmit()" value="Send form data!"><br><br>
+        <p id="p1"></p>
+<script>
+	var date = new Date();
+	document.getElementById("p1").innerHTML = date;
+</script>
+</table>
+</div>
+    </form>
+
+</fieldset>
+</body>
+</html>
